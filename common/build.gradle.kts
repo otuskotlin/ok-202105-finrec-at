@@ -4,7 +4,9 @@ plugins {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    val junitJupiterApi: String by project
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterApi")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
